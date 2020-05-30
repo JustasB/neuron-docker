@@ -18,7 +18,7 @@ RUN rm miniconda.sh
 ENV PATH=/miniconda/bin:${PATH}
 
 # Create Python environment named 'p3'
-RUN conda create -n p3 -c anaconda python=3.5.3
+RUN conda create -n p3 -c anaconda python=3
 ENV PATH /opt/conda/envs/p3/bin:$PATH
 RUN /bin/bash -c "source activate p3"
 
