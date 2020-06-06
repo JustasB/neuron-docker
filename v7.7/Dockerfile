@@ -60,10 +60,6 @@ ENV PATH="$IV/$CPU/bin:$N/$CPU/bin:$PATH"
 RUN cd ~/neuron/nrn/src/nrnpython/ && \
     python setup.py install
 
-# Install Jupyterlab
-RUN pip install jupyterlab
-EXPOSE 8888 8888
-
 # Remove packages that are not needed to run NEURON
 RUN apt-get -y remove libxt-dev gnome-devel libncurses-dev 
 RUN apt -y autoremove --purge
