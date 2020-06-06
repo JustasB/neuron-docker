@@ -10,6 +10,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install mpich
 #RUN DEBIAN_FRONTEND=noninteractive apt-get -y install libncurses-dev
 #RUN DEBIAN_FRONTEND=noninteractive apt-get -y install xfonts-100dpi
 #RUN DEBIAN_FRONTEND=noninteractive apt-get -y install make
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install curl
 
 # Install miniconda with python 3.7
 RUN curl -o miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-4.7.12.1-Linux-x86_64.sh
