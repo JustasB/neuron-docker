@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 # Install packages required for NEURON and IV compilation
-#RUN apt-get update
+RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install mpich
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install curl
 
